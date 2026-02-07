@@ -84,7 +84,7 @@ public class Qes1_13 {
 		double weight = 62.2;
 		System.out.println("体重は"+weight+"kgです");
 		
-		//「好きな食べ物は○○です」 Q
+		//「好きな食べ物は○○です」
 		String food = "寿司";
 		System.out.println("好きな食べ物は"+food+"です");
 		
