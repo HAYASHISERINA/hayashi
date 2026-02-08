@@ -92,12 +92,55 @@ public class Qes1_13 {
 		//ただし計算は数値を直書きせず、全て変数を使ってすること
 		System.out.println("BMIは"+(weight/(height*height)*10000+"です"));
 		
+		//Q8
+		String name1 = "鈴木一郎";
+		System.out.println("初めまして"+name1+"です");
 		
+		int age1 =24;
+		System.out.println("年齢は"+age1+"です");
 		
+		double height1 = 168.5;
+		System.out.println("身長は"+height1+"です");
+		
+		double weight1 = 64.2;
+		System.out.println("体重は"+weight1+"kgです");
+		
+		String food1 = "オムライス";
+		System.out.println("好きな食べ物は"+food1+"です");
+		
+		System.out.println("BMIは"+(weight1/(height1*height1)*10000+"です"));
 	
 		
+		//Q8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
+		String name2 = "鈴木一郎";
+		System.out.println("初めまして"+name2+"です");
 		
-
+		int age2=24;
+		age2 += age2;
+		System.out.println("年齢は"+age2+"です");
+		
+		double height2 = 168.5;
+		height2 +=height2;
+		System.out.println("身長は"+height2+"です");
+		
+		double weight2 = 64.2;
+		weight2 +=weight2;
+		System.out.println("体重は"+weight2+"kgです");
+		
+		String food2 = "オムライス";
+		System.out.println("好きな食べ物は"+food2+"です");
+		
+		System.out.println("BMIは"+(weight2/(height2*height2)*10000+"です"));
+		
+		//Q9 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+		int age3 =24;
+		System.out.println(age1>=25);
+		
+		
+		
+		
+		
 	}
+	
 
 }
