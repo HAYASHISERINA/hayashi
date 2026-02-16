@@ -59,7 +59,6 @@ public class Qes1_13 {
 		//　String num="20";
 		//　int num1=23;
 		//　System.out.println("ハローJAVA"+(num+num1));
-		
 		String num ="20";
 		int num1 =23;
 		System.out.println("ハローJAVA"+(Integer.parseInt(num)+num1));
@@ -111,7 +110,7 @@ public class Qes1_13 {
 		System.out.println("BMIは"+(weight1/(height1*height1)*10000+"です"));
 	
 		
-		//Q8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
+		//Q9で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 		String name2 = "鈴木一郎";
 		System.out.println("初めまして"+name2+"です");
 		
@@ -132,11 +131,27 @@ public class Qes1_13 {
 		
 		System.out.println("BMIは"+(weight2/(height2*height2)*10000+"です"));
 		
-		//Q9 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+		//Q10 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		int age3 =24;
 		System.out.println(age1>=25);
 		
+		//Q11 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		String variable1 = String.valueOf(age1);
+		String variable2 = String.valueOf(height);
+		String variable3 = String.valueOf(weight1);
 		
+		System.out.println(variable1+variable2+variable3);
+		
+		//Q12 11で変換した【年齢・身長】を整数型に変換して出力してください
+		int age4 = Integer.parseInt(variable1);
+		double height4 =Double.parseDouble(variable2);
+		
+		System.out.println(age4);
+		System.out.println(height4);
+		
+		//Q13 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
+		//ただしif文は使わないでください
+		System.out.println(age4>=25||height4>=160);
 		
 		
 		
