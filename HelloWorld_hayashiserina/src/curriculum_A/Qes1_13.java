@@ -16,7 +16,7 @@ public class Qes1_13 {
 		float float1;
 		double double1;
 		char char1;
-		String String1;
+		String string1;
 		boolean boolean1;
 
 		//Q2
@@ -28,7 +28,7 @@ public class Qes1_13 {
 		float1 = 0.0f;
 		double1 = 0.0d;
 		char1 = '\u0000';
-		String1 = null;
+		string1 = null;
 		boolean1 = false;
 
 		//Q3
@@ -40,14 +40,14 @@ public class Qes1_13 {
 		float1 = 9.5f;
 		double1 = 10.5d;
 		char1 = 'a';
-		String1 = "ハロー";
+		string1 = "ハロー";
 		boolean1 = true;
 
 		//Q4
 		//下記の通りにコンソール出力されるようにしてください
 		System.out.println(byte1 + short1 + int1 + long1);
 		System.out.println(byte1 * 2);
-		System.out.println(char1 + String1 + boolean1);
+		System.out.println(char1 + string1 + boolean1);
 		System.out.println(byte1 + short1 + int1 + long1);
 		System.out.println(byte1 * short1 * int1 * long1);
 		System.out.println(double1 / 100);
