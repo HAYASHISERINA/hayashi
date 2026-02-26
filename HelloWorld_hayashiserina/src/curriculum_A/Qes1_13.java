@@ -129,7 +129,7 @@ public class Qes1_13 {
 		String food2 = "オムライス";
 		System.out.println("好きな食べ物は" + food2 + "です");
 
-		System.out.printf("BMIはです%1f" ,weight2 / (height2 * height2) * 10000 );
+		System.out.printf("BMIは%.1fです" ,weight2 / (height2 * height2) * 10000 );
 
 		//Q10 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		int age3 = 24;
@@ -137,7 +137,7 @@ public class Qes1_13 {
 
 		//Q11 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		String variable1 = String.valueOf(age1);
-		String variable2 = String.valueOf(height);
+		String variable2 = String.valueOf(height1);
 		String variable3 = String.valueOf(weight1);
 
 		System.out.println(variable1 + variable2 + variable3);
