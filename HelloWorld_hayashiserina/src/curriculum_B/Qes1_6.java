@@ -37,19 +37,19 @@ public class Qes1_6 {
 		        case "テレビ":
 		        case "ディスプレイ":
 		            int random = (int)(Math.random() * 12);
-		            int tvStock = 11 - random;
+		            int tvStock = (random <= 11)? 11 - random : 0 ;
 		            System.out.println(item + "の残り台数は" + tvStock + "台です");
 		            break;
 
 		        default:
 		            System.out.println("「" + item + "」は指定の商品ではありません");
-		            scanner.close();
+		           
 		            
 		    }
+		    scanner.close();
 		}
 	}
 }
-
 
 	
 
