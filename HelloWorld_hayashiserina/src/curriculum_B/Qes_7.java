@@ -12,9 +12,12 @@ public class Qes_7 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        int n ;
+        do {
 
 		        System.out.print("生徒の人数を入力してください（2以上）：");
-		        int n = scanner.nextInt();
+		        n = scanner.nextInt();
+        } while (n < 2 );
 
 		        int sumEnglish = 0;
 		        int sumMath = 0;
