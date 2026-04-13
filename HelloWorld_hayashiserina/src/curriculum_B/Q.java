@@ -5,30 +5,46 @@ import java.util.Scanner;
 
 public class Q {
 
-    public static void main(String[] args) {
+//Q6入力した商品の残り台数が出力されるシステムを下記の条件で作成してください
+//・拡張for文・Switch文・条件演算子を使用すること　※普通のif文は使用不可
+//・Switch文内でテレビとディスプレイは続けて書くようにしてください、条件演算子で出力される値を変更してください
+//・テレビとディスプレイは同じ商品扱いとし、ディスプレイが出た場合は最大個数の11個からランダムで出た数字を引いて出力してください 
+//・例：テレビと受け取った場合、→「テレビの残り台数は〇〇台です」※〇〇はランダムで出た数字
+//・入力される値は右記の表のどれかが入力され、入力回数の縛りはありません
+//・入力された値は「、」区切りで指定してください
+//・そのほかの値が入力された場合下記を出力されるようにしてください
+//『受け取った値』は指定の商品ではありません
+//・残り台数は0〜11までのランダムな値が出力されるようにしてください
+//パソコン、冷蔵庫、扇風機、洗濯機、加湿器、テレビ、ディスプレイ、その他商品
+    Scanner scanner = new Scanner(System.in);
+    String input = scanner.nextLine();
 
-        Scanner scanner = new Scanner(System.in);
+    String[] items = input.split(",");{
 
-        System.out.println("名前を入力してください");
+    for (String item : items) {
 
-        String name = scanner.nextLine();
-       
-        System.out.println("こんにちは、" + name );
-        
- //ユーザー名の文字数が0文字以下もしくはnullの場合「名前を入力してください」と出力してください
- //ユーザー名の文字数が10文字より大きい場合「名前を10文字以内にしてください」と出力してください
- //ユーザー名が正常な値だった場合「ユーザー名「 入力したユーザー名 」を登録しました」と出力してください
- //2ユーザー名が半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力してください
-if (name.length() == 0) {
-    System.out.println("名前を入力してください"); 
- } else if (name.length() > 10) {
-        System.out.println("名前を10文字以内にしてください");  
- } else if (! name.matches("^{a-zA-Z0-9}+$" )) {
-	 System.out.println("半角英数字のみで名前を入力してください");
- } else {
-	System.out.println("ユーザー名「 " + name + " 」を登録しました");
- }
+        switch (item) {
+
+            case "パソコン":
+            case "冷蔵庫":
+            case "扇風機":
+            case "洗濯機":
+            case "加湿器":
+                int stock = (int)(Math.random() * 12);
+                System.out.println(item + "の残り台数は" + stock + "台です");
+                break;
+
+            case "テレビ":
+            case "ディスプレイ":
+                int random = (int)(Math.random() * 12);
+                int tvStock = 11 - random;
+                System.out.println(item + "の残り台数は" + tvStock + "台です");
+                break;
+
+            default:
+                System.out.println("「" + item + "」は指定の商品ではありません");
+        }
+    }
     }
 }
-
 

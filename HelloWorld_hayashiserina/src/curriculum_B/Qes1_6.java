@@ -43,6 +43,8 @@ public class Qes1_6 {
 
 		        default:
 		            System.out.println("「" + item + "」は指定の商品ではありません");
+		            scanner.close();
+		            
 		    }
 		}
 	}
