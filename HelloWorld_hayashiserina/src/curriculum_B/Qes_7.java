@@ -62,8 +62,12 @@ public class Qes_7 {
 		        // 全体平均
 		        double overall = totalAll / (double)(n * 4);
 		        System.out.println("全体の平均点は" + overall + "点です。");
+		        scanner.close();
 		    }
+}
+
+
 		
 
-	}
+	
 
