@@ -23,34 +23,34 @@ public class Qes1_6 {
 
 		for (String item : items) {
 
-		    switch (item) {
+			switch (item) {
 
-		        case "パソコン":
-		        case "冷蔵庫":
-		        case "扇風機":
-		        case "洗濯機":
-		        case "加湿器":
-		            int stock = (int)(Math.random() * 12);
-		            System.out.println(item + "の残り台数は" + stock + "台です");
-		            break;
+			case "パソコン":
+			case "冷蔵庫":
+			case "扇風機":
+			case "洗濯機":
+			case "加湿器":
+				int stock = (int) (Math.random() * 12);
+				System.out.println(item + "の残り台数は" + stock + "台です");
+				break;
 
-		        case "テレビ":
-		        case "ディスプレイ":
-		            int random = (int)(Math.random() * 12);
-		            int tvStock = (random <= 11)? 11 - random : 0 ;
-		            System.out.println(item + "の残り台数は" + tvStock + "台です");
-		            break;
+			case "テレビ":
+			case "ディスプレイ":
+				int random = (int) (Math.random() * 12);
+				int tvStock = (random <= 11) ? 11 - random : 0;
+				System.out.println(item + "の残り台数は" + tvStock + "台です");
+				break;
 
-		        default:
-		            System.out.println("「" + item + "」は指定の商品ではありません");
-		           
-		            
-		    }
-		    scanner.close();
+			default:
+				System.out.println("「" + item + "」は指定の商品ではありません");
+
+			}
+
 		}
+		scanner.close();
+
 	}
 }
-
 	
 
 
